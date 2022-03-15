@@ -33,12 +33,12 @@
 //CODE HERE
 
 const pizza = {
-    name: `Meat Lovers Pizza`,
-    price: 13.68,
-    category: `Entree`,
-    popularity: 5,
-    rating: 4.6,
-    tags: [`family-size`, `finger-food`],
+    'name': `Meat Lovers Pizza`,
+    'price': 13.68,
+    'category': `Entree`,
+    'popularity': 5,
+    'rating': 4.6,
+    'tags': [`family-size`, `finger-food`],
 }
 
 //////////////////PROBLEM 2////////////////////
@@ -106,44 +106,44 @@ console.log(meatLoversCategory)
 
 const foodArr = [
     spaghetti = {
-        name: `Spaghetti and Meatballs`,
-        price: 12.99,
-        category: `Entree`,
-        popularity: 4,
-        rating: 3.8,
-        tags: [`kids`, `pasta`],
+        'name': `Spaghetti and Meatballs`,
+        'price': 12.99,
+        'category': `Entree`,
+        'popularity': 4,
+        'rating': 3.8,
+        'tags': [`kids`, `pasta`],
     },
     breadsticks = {
-        name: `Garlic Bread Knots`,
-        price: 7.99,
-        category: `Appetizer`,
-        popularity: 5,
-        rating: 4.9,
-        tags: [`family-size`, `finger-food`]
+        'name': `Garlic Bread Knots`,
+        'price': 7.99,
+        'category': `Appetizer`,
+        'popularity': 5,
+        'rating': 4.9,
+        'tags': [`family-size`, `finger-food`]
     },
     burger = {
-        name: `All-American Bacon Burger`,
-        price: 14.98,
-        category: `Entree`,
-        popularity: 4,
-        rating: 4.2,
-        tags: [`premium`, `sandwich`]
+        'name': `All-American Bacon Burger`,
+        'price': 14.98,
+        'category': `Entree`,
+        'popularity': 4,
+        'rating': 4.2,
+        'tags': [`premium`, `sandwich`]
     },
     neapolitanShake = {
-        name: `Crazy Shake`,
-        price: 9.78,
-        category: `Drink`,
-        popularity: 5,
-        rating: 4.9,
-        tags: [`kids`, `dessert`]
+        'name': `Crazy Shake`,
+        'price': 9.78,
+        'category': `Drink`,
+        'popularity': 5,
+        'rating': 4.9,
+        'tags': [`kids`, `dessert`]
     },
     sideSalad = {
-        name: `House Salad`,
-        price: 7.89,
-        category: `Side`,
-        popularity: 3,
-        rating: 3.4,
-        tags: [`kids`, `pasta`]
+        'name': `House Salad`,
+        'price': 7.89,
+        'category': `Side`,
+        'popularity': 3,
+        'rating': 3.4,
+        'tags': [`healthy`]
     }
 ]
 
@@ -161,9 +161,15 @@ const foodArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(ele => {
+    for(let i = 0; i < ele.tags.length; i++){
+        if(ele.tags[i] === `kids`){
+            return true
+        }
+    }
+})
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -206,6 +212,21 @@ const foodArr = [
 
 //CODE HERE
 
+function filterByProperty(property, num, type){
+    let propFilteredFood = foodArr.filter(ele => {
+        if(type === `above`){
+            if(ele[property] > num){
+                return true
+            }
+        }
+        else if(type === `below`){
+            if(ele[property] < num){
+                return true
+            }
+        }
+    })
+    return propFilteredFood
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -215,3 +236,5 @@ const foodArr = [
 */
 
 //CODE HERE
+
+console.log(filterByProperty('price', 10, `above`))
