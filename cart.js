@@ -87,7 +87,10 @@ console.log(calcFinalPrice(20.38, 3, 0.06))
 
 /*
     TEXT ANSWER HERE
-
+    My customer object will have the name(string), email(string), bday(string), and avgPurchaseAmt(number) properties. 
+    Naturally, a restaurant would want its customers' names and emails.
+    Having a customer's birthday on file allows for special birthday offers to get them coming back.
+    By keeping a customer's average purchase amount on file, a restaurant can anticipate how much money that customer is making them.
 */
 
 /*
@@ -96,3 +99,10 @@ console.log(calcFinalPrice(20.38, 3, 0.06))
 */
 
 //CODE HERE
+
+const customer = {
+    'name': `Lucas Brell`,
+    'email': `brelllucas@mymail.net`,
+    'bday': `August 21st`,
+    'avgPurchaseAmt': 32.56
+}
