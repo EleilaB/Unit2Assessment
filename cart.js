@@ -59,7 +59,11 @@ console.log(summedPrice)
 
 //CODE HERE
 
+function calcFinalPrice(cartTotal, couponValue, tax){
+    return (cartTotal + (cartTotal* tax)) - couponValue
+}
 
+console.log(calcFinalPrice(20.38, 3, 0.06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
