@@ -81,6 +81,12 @@ canWeDeliver = (zipCode) => {
 
 // CODE HERE
 
+canWeDeliverTwo = (zipCode) => {
+    if(deliveryAreaZipCodes.includes(zipCode)){
+        return `You're in our delivery zone!`
+    }
+    else return `Sorry, we can't deliver to that address.`
+}
 
 //////////////////PROBLEM 3////////////////////
 /* 
