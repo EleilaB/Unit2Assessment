@@ -104,7 +104,48 @@ console.log(meatLoversCategory)
 
 //CODE HERE
 
-
+const foodArr = [
+    spaghetti = {
+        name: `Spaghetti and Meatballs`,
+        price: 12.99,
+        category: `Entree`,
+        popularity: 4,
+        rating: 3.8,
+        tags: [`kids`, `pasta`],
+    },
+    breadsticks = {
+        name: `Garlic Bread Knots`,
+        price: 7.99,
+        category: `Appetizer`,
+        popularity: 5,
+        rating: 4.9,
+        tags: [`family-size`, `finger-food`]
+    },
+    burger = {
+        name: `All-American Bacon Burger`,
+        price: 14.98,
+        category: `Entree`,
+        popularity: 4,
+        rating: 4.2,
+        tags: [`premium`, `sandwich`]
+    },
+    neapolitanShake = {
+        name: `Crazy Shake`,
+        price: 9.78,
+        category: `Drink`,
+        popularity: 5,
+        rating: 4.9,
+        tags: [`kids`, `dessert`]
+    },
+    sideSalad = {
+        name: `House Salad`,
+        price: 7.89,
+        category: `Side`,
+        popularity: 3,
+        rating: 3.4,
+        tags: [`kids`, `pasta`]
+    }
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
