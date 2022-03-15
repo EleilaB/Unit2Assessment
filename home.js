@@ -23,9 +23,7 @@
 
 //CODE HERE
 
-
-
-
+greetUser = (username) => `Welcome back, ${username}.`
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -51,7 +49,18 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
-
+canWeDeliver = (zipCode) => {
+    var inArea = false;
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === zipCode){
+            inArea = true
+        }
+    }
+    if(inArea === true){
+        return `You're in our delivery zone!`
+    }
+    else return `Sorry, we can't deliver to that address.`
+}
 
 /* 
     Problem 2 Continued
