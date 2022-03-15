@@ -33,12 +33,12 @@
 //CODE HERE
 
 const pizza = {
-    name: `Meat Lovers`,
+    name: `Meat Lovers Pizza`,
     price: 13.68,
     category: `Entree`,
     popularity: 5,
     rating: 4.6,
-    tags: `Family-size`
+    tags: [`family-size`, `finger-food`],
 }
 
 //////////////////PROBLEM 2////////////////////
@@ -62,6 +62,7 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -72,6 +73,9 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
+let meatLoversPrice = pizza.price
+
+console.log(meatLoversPrice)
 
 /*
     Fourth, and last, destructure the category
@@ -82,6 +86,9 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
+let meatLoversCategory = pizza.category
+
+console.log(meatLoversCategory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
